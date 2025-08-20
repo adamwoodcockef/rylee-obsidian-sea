@@ -18,3 +18,7 @@ I then wanted to get through some of the styling (bold text, removal of vertical
 
 Tests were the logical next step so I added some here. **I used AI to help me write these tests**, this is standard practice at EF and I felt it appropriate to use here especially given the times. We are quite heavy on the tests across the stack and I feel AI is an excellent tool for vastly improving the speed of quite a mundane (to me) process. This also gave me a little time to do some mobile styling and refactoring.
 
+I did then restucture the project a little, again with time constraints I only focused on FE component/UI files following the rough structure that I'm used to. I then did some extremely basic mobile styling, though this was in the last couple minutes so I didn't get much time to look at this.
+
+### End
+I've been trying to write this as I go to not go too much over the time. This genuinely was a really fun test to do I had a great time so thank you for keeping it engaging, I have lots and lots I could say about the work here, so if you wanted to talk about it more then I'd love that.
