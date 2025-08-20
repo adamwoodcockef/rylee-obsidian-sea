@@ -12,3 +12,14 @@
 .logo path {
   fill: #fb534a;
 }
+
+/* Basic mobile styling */
+@media (max-width: 768px) {
+  .Header {
+    padding: 15px 10px;
+  }
+
+  .Header h1 {
+    font-size: 1.5rem;
+  }
+}
