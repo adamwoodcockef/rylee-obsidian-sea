@@ -11,7 +11,9 @@ const Applications = () => {
   if (isLoading && applications.length === 0) {
     return (
       <div className={styles.Applications}>
-        <p>Loading applications...</p>
+        <div className={styles.loadingState}>
+          <p>Loading applications...</p>
+        </div>
       </div>
     );
   }
@@ -20,10 +22,15 @@ const Applications = () => {
   if (error) {
     return (
       <div className={styles.Applications}>
-        <p>Error: {error}</p>
-        <Button className="" onClick={() => window.location.reload()}>
-          Retry
-        </Button>
+        <div className={styles.errorState}>
+          <p>Error: {error}</p>
+          <Button
+            className={styles.retryButton}
+            onClick={() => window.location.reload()}
+          >
+            Retry
+          </Button>
+        </div>
       </div>
     );
   }
@@ -32,7 +39,9 @@ const Applications = () => {
   if (!isLoading && applications.length === 0) {
     return (
       <div className={styles.Applications}>
-        <p>No applications found.</p>
+        <div className={styles.emptyState}>
+          <p>No applications found.</p>
+        </div>
       </div>
     );
   }
@@ -44,12 +53,16 @@ const Applications = () => {
       ))}
 
       {hasMore && (
-        <div>
-          <Button className="" onClick={fetchNextPage} disabled={isLoading}>
+        <div className={styles.loadMoreSection}>
+          <Button
+            className={styles.loadMoreButton}
+            onClick={fetchNextPage}
+            disabled={isLoading}
+          >
             {isLoading ? "Loading..." : "Load More"}
           </Button>
           {totalCount && (
-            <p>
+            <p className={styles.paginationInfo}>
               Showing {applications.length} of {totalCount} applications
             </p>
           )}

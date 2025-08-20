@@ -1,14 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import { API_APPLICATIONS } from "./constants";
-import { Application } from "./interfaces";
-
-type ApiState = {
-  applications: Application[];
-  isLoading: boolean;
-  error: string | null;
-  hasMore: boolean;
-  totalCount: number | null;
-};
+import { ApiState, Application } from "./interfaces";
 
 export const useApi = () => {
   const [state, setState] = useState<ApiState>({

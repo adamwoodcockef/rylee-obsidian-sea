@@ -19,3 +19,11 @@ export interface Application {
   avatar: string;
   loan_history: LoanHistory[];
 }
+
+export interface ApiState {
+  applications: Application[];
+  isLoading: boolean;
+  error: string | null;
+  hasMore: boolean;
+  totalCount: number | null;
+};

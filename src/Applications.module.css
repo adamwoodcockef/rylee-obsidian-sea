@@ -3,3 +3,45 @@
   max-width: 1200px;
   margin: 0 auto;
 }
+
+.loadingState,
+.errorState,
+.emptyState {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+}
+
+.errorState {
+  color: #d32f2f;
+}
+
+.loadMoreSection {
+  text-align: center;
+  padding: 2rem;
+  border-top: 1px solid #eee;
+  margin-top: 2rem;
+}
+
+.paginationInfo {
+  margin-top: 1rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.endOfResults {
+  text-align: center;
+  padding: 1rem;
+  color: #666;
+  font-style: italic;
+  border-top: 1px solid #eee;
+  margin-top: 2rem;
+}
+
+.retryButton {
+  margin-top: 1rem;
+}
+
+.loadMoreButton {
+  min-width: 120px;
+}
