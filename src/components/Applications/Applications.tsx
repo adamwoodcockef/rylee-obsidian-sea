@@ -1,7 +1,7 @@
-import SingleApplication from "./SingleApplication";
+import SingleApplication from "../SingleApplication/SingleApplication";
 import styles from "./Applications.module.css";
-import { useApi } from "./api/useApi";
-import { Button } from "./ui/Button/Button";
+import { useApi } from "../../api/useApi";
+import { Button } from "../Button/Button";
 
 const Applications = () => {
   const { applications, isLoading, error, hasMore, fetchNextPage, totalCount } =

@@ -1,10 +1,10 @@
 import { render, screen, fireEvent, waitFor } from "@testing-library/react";
 import Applications from "./Applications";
-import { useApi } from "./api/useApi";
+import { useApi } from "../../api/useApi";
 import { vi } from "vitest";
 
 // Mock the useApi hook
-vi.mock("./api/useApi");
+vi.mock("../../api/useApi");
 const mockUseApi = useApi as any;
 
 // Mock data

@@ -1,6 +1,6 @@
 import { renderHook, act, waitFor } from "@testing-library/react";
-import { useApi } from "./useApi";
-import { Application } from "./interfaces";
+import { useApi } from "../useApi";
+import { Application } from "../interfaces";
 import { vi } from "vitest";
 
 // Mock fetch globally

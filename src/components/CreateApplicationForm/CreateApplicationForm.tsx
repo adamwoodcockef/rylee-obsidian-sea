@@ -7,7 +7,7 @@ import {
   UseFormRegister,
   UseFormReturn,
 } from "react-hook-form";
-import { Button } from "../ui/Button/Button";
+import { Button } from "../Button/Button";
 import styles from "./CreateApplicationForm.module.css";
 
 const ERROR_REQUIRED = "Required";

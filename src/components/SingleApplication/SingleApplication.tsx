@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./SingleApplication.module.css";
-import { Application } from "./api/interfaces";
+import { Application } from "../../api/interfaces";
 
 const SingleApplication = ({ application }: { application: Application }) => {
   const formatCurrency = (amount: number): string => {

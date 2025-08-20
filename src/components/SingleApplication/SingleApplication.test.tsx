@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import SingleApplication from "./SingleApplication";
-import { Application } from "./api/interfaces";
+import { Application } from "../../api/interfaces";
 
 // Mock data for testing
 const mockApplication: Application = {
